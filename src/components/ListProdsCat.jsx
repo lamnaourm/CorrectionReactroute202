@@ -1,9 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const ListProdsCat = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const [produits, setProduits] = useState([]);
 
@@ -30,7 +31,7 @@ const ListProdsCat = () => {
           <div className="card" key={item.id}>
             <img src={item.images[0]} />
             <h2>{item.title}</h2>
-            <button>Details produit</button>
+            <button onClick={() => navigate(`/produits/${item.id}`)}>Details produit</button>
           </div>
         ))}
       </div>

@@ -83,3 +83,23 @@
 .active {
   background-color: #555;
 }
+
+
+table {
+  width: 80%;
+  font-size: 25px;
+  margin: auto;
+}
+
+table td {
+  padding: 10px;
+}
+
+table td:nth-child(1) {
+  font-weight: bold;
+}
+table img {
+  width: 300px;
+  margin: 5px;
+  border: 2px solid #000;
+}

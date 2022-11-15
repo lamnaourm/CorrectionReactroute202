@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Categories from "./components/Categories";
+import DetailsProduit from "./components/DetailsProduit";
 import Home from "./components/Home";
 import ListProdsCat from "./components/ListProdsCat";
 import Produits from "./components/Produits";
@@ -17,7 +18,10 @@ function App() {
               <Route index element={<Categories />} />
               <Route path=":id" element={<ListProdsCat />} />
           </Route>
-          <Route path="produits" element={<Produits />} />
+          <Route path="produits">
+              <Route index element={<Produits />} />
+              <Route path=":id" element={<DetailsProduit />} />
+          </Route>
         </Route>
       </Routes>
     </div>
