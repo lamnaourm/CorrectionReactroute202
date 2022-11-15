@@ -9,13 +9,13 @@ export default function Home() {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">Acceuil</NavLink>
+              <NavLink end to="/">Acceuil</NavLink>
             </li>
             <li>
-              <NavLink to="Categories">Categories</NavLink>
+              <NavLink end to="Categories" className={({isActive}) => isActive? 'active':undefined}>Categories</NavLink>
             </li>
             <li>
-              <NavLink to="Produits">Produits</NavLink>
+              <NavLink end to="Produits" className={({isActive}) => isActive? 'active':undefined}>Produits</NavLink>
             </li>
           </ul>
         </nav>
