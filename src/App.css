@@ -45,8 +45,8 @@
   margin: 10px 70px;
 }
 .card {
-  border: 1px solid rgb(112, 116, 200);
-  background-color: white;
+  border: 1px solid rgb(215, 216, 241);
+  background-color: whitesmoke;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,23 @@
 .card h2 {
   font-size: 15px;
   text-align: center;
+}
+
+.card button {
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.card button:hover {
+  opacity: 0.75;
+}
+
+.card button:active {
+  opacity: 0.5;
 }
 
 .active {

@@ -30,6 +30,7 @@ const ListProdsCat = () => {
           <div className="card" key={item.id}>
             <img src={item.images[0]} />
             <h2>{item.title}</h2>
+            <button>Details produit</button>
           </div>
         ))}
       </div>
