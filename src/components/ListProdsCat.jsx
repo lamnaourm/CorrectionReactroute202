@@ -21,7 +21,7 @@ const ListProdsCat = () => {
   return (
     <div>
       <h1>
-        Liste des produits de la categorie{" "}
+        Liste des produits de la categorie
         {produits.length != 0 && produits[0].category.name}
       </h1>
 
